@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Sacconi Fedele</title> 
+    <style>
+        /* Estilos Generales con Temática Mundialista */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #1a252c;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Barra de Navegación "Estilo Estadio" */
+        nav {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #0d233a, #071424);
+            padding: 15px 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #dfb119; /* Dorado Trofeo */
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Encabezados */
+        h1 {
+            color: #0d233a;
+            font-size: 36px;
+            border-bottom: 4px solid #dfb119;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: #0d233a;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Subtítulo Introductorio */
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4a5568;
+            max-width: 800px;
+            margin: 20px auto;
+            font-style: italic;
+        }
+
+        /* Imagen del Trofeo */
+        .trophy-img {
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin: 25px 0;
+            border: 3px solid #dfb119;
+            transition: transform 0.3s ease;
+        }
+        .trophy-img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Separador Verde Césped */
+        hr.pitch-line {
+            border: none;
+            height: 6px;
+            background: linear-gradient(to right, #2e7d32, #4caf50, #2e7d32);
+            border-radius: 3px;
+            margin: 40px 0;
+        }
+
+        /* Contenedor de Tablas en Cuadrícula */
+        .groups-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        /* Tarjetas de Grupos */
+        .group-card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-top: 5px solid #0d233a;
+        }
+
+        .group-card h2 {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        /* Tablas de Posiciones Estilizadas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #0d233a;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        tr {
+            border-bottom: 1px solid #e2e8f0;
+            transition: background-color 0.2s;
+        }
+
+        tr:last-child {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        /* Sección Mapa e Predicción */
+        .section-block {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            border-left: 5px solid #dfb119;
+        }
+
+        .prediction-text {
+            font-size: 16px;
+            line-height: 1.7;
+            text-align: left;
+            color: #2d3748;
+            max-width: 850px;
+            margin: 15px auto;
+        }
+
+        iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN INTERNO -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#grupo-a">Grupo A</a>
+        <a href="#grupo-b">Grupo B</a>
+        <a href="#grupo-c">Grupo C</a>
+        <a href="#grupo-d">Grupo D</a>
+        <a href="#ciudad-sede">Ciudad Sede</a>
+        <a href="#mi-prediccion">Mi Predicción</a>
+    </nav>
+
+    <div class="container" style="text-align: center;">
+        
+        <!-- SECCIÓN INICIO -->
+        <div id="inicio">
+            <h1>Mundial-2026 / Fase de grupos</h1>
+            <p class="intro-text">La Copa Mundial de la FIFA 2026 es organizada por tres países anfitriones (Canadá, Estados Unidos y México). Por primera vez en la historia, el torneo cuenta con una cantidad de 48 selecciones participantes y se lleva a cabo del 11 de junio al 19 de julio de 2026.</p>
+            <img class="trophy-img" src="https://cdn.conmebol.com/wp-content/uploads/2022/10/000_ARP2858949-682x1024.jpg" alt="Trofeo del Mundial de la FIFA 2026 con Maradona" width="300" height="300"> 
+        </div>
+        
+        <hr class="pitch-line"/>
+
+        <!-- CONTENEDOR DE GRUPOS -->
+        <div class="groups-grid">
+            
+            <!-- GRUPO A -->
+            <div class="group-card" id="grupo-a">
+                <h2>Grupo A</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>México</td><td>CONCACAF</td></tr>
+                        <tr><td>Rep Corea</td><td>CAF</td></tr>
+                        <tr><td>Rep. Checa</td><td>UEFA</td></tr>
+                        <tr><td>Sudáfrica</td><td>CAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- GRUPO B -->
+            <div class="group-card" id="grupo-b">
+                <h2>Grupo B</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Canadá</td><td>CONCACAF</td></tr>
+                        <tr><td>Suiza</td><td>CAF</td></tr>
+                        <tr><td>Bosnia</td><td>UEFA</td></tr>
+                        <tr><td>Qatar</td><td>CAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO C -->
+            <div class="group-card" id="grupo-c">
+                <h2>Grupo C</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Brasil</td><td>CONCACAF</td></tr>
+                        <tr><td>Marruecos</td><td>CAF</td></tr>
+                        <tr><td>Escocia</td><td>UEFA</td></tr>
+                        <tr><td>Haití</td><td>CAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- GRUPO D -->
+            <div class="group-card" id="grupo-d">
+                <h2>Grupo D</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Estados Unidos</td><td>CONCACAF</td></tr>
+                        <tr><td>Paraguay</td><td>CONMEBOL</td></tr>
+                        <tr><td>Alemania</td><td>UEFA</td></tr>
+                        <tr><td>Turquía</td><td>CAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO E -->
+            <div class="group-card">
+                <h2>Grupo E</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Alemania</td><td>UEFA</td></tr>
+                        <tr><td>Curazao</td><td>CONCACAF</td></tr>
+                        <tr><td>Costa de Marfil</td><td>CAF</td></tr>
+                        <tr><td>Ecuador</td><td>CONMEBOL</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO F -->
+            <div class="group-card">
+                <h2>Grupo F</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Países Bajos</td><td>UEFA</td></tr>
+                        <tr><td>Japón</td><td>AFC</td></tr>
+                        <tr><td>Suecia</td><td>UEFA</td></tr>
+                        <tr><td>Túnez</td><td>CAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO G -->
+            <div class="group-card">
+                <h2>Grupo G</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Bélgica</td><td>UEFA</td></tr>
+                        <tr><td>Egipto</td><td>CAF</td></tr>
+                        <tr><td>Irán</td><td>AFC</td></tr>
+                        <tr><td>Nueva Zelanda</td><td>OFC</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO H -->
+            <div class="group-card">
+                <h2>Grupo H</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>España</td><td>UEFA</td></tr>
+                        <tr><td>Cabo Verde</td><td>CAF</td></tr>
+                        <tr><td>Arabia Saudita</td><td>AFC</td></tr>
+                        <tr><td>Uruguay</td><td>CONMEBOL</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO I -->
+            <div class="group-card">
+                <h2>Grupo I</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Francia</td><td>UEFA</td></tr>
+                        <tr><td>Irak</td><td>AFC</td></tr>
+                        <tr><td>Noruega</td><td>UEFA</td></tr>
+                        <tr><td>Senegal</td><td>CAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO J -->
+            <div class="group-card">
+                <h2>Grupo J</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Argentina</td><td>CONMEBOL</td></tr>
+                        <tr><td>Argelia</td><td>CAF</td></tr>
+                        <tr><td>Austria</td><td>UEFA</td></tr>
+                        <tr><td>Jordania</td><td>AFC</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO K -->
+            <div class="group-card">
+                <h2>Grupo K</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Portugal</td><td>UEFA</td></tr>
+                        <tr><td>RD Congo</td><td>CAF</td></tr>
+                        <tr><td>Uzbekistán</td><td>AFC</td></tr>
+                        <tr><td>Colombia</td><td>CONMEBOL</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- GRUPO L -->
+            <div class="group-card">
+                <h2>Grupo L</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Selección</th>
+                            <th>Confederación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Inglaterra</td><td>UEFA</td></tr>
+                        <tr><td>Croacia</td><td>UEFA</td></tr>
+                        <tr><td>Ghana</td><td>CAF</td></tr>
+                        <tr><td>Panamá</td><td>CONCACAF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div> <!-- Fin de la cuadrícula de grupos -->
+
+        <!-- SECCIÓN CIUDAD SEDE -->
+        <div class="section-block" id="ciudad-sede">
+            <h2>Estadio de Sede (Partidos Destacados)</h2>
+            <div style="margin-top: 15px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.6669745619574!2d-97.09538732530764!3d32.748032585468415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d86c8884727%3A0x6d1e60e88c6a9df8!2sEstadio%20Dallas!5e0!3m2!1ses!2sar!4v1782218324451!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN MI PREDICCIÓN -->
+        <div class="section-block" id="mi-prediccion" style="border-left-color: #2e7d32;">
+            <h2>Mi Predicción para el Mundial 2026</h2>
+            <div style="padding: 0 10px;">
+                <p class="prediction-text">Respecto al que levantará el trofeo en el estadio New York New Jersey, mi análisis apunta a que la selección campeona será <strong>Argentina</strong>. El equipo americano llega con una base muy consolidada, una generación de talentos que han ganado los dos primeros partidos y la experiencia reciente de haber ganado el anterior mundial, lo que los posiciona como los principales candidatos para dominar el torneo.</p>
+                <p class="prediction-text">Al analizar el cuadro de eliminación y a los equipos, creo que la gran final será disputada entre las selecciones de <strong>España</strong> y <strong>Argentina</strong>.</p>
+                <p class="prediction-text">En cuanto a las individualidades, el jugador que podría destacarse durante el torneo es <strong>Lamine Yamal</strong> del seleccionado español. Con su visión de juego y juventud, tiene el escenario perfecto para consolidarse como la gran figura mundial.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
